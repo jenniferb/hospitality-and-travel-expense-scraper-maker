@@ -1,0 +1,37 @@
+/*---------- SPECIAL STYLES ----------*/
+
+div.example {
+    border: 2px solid #f7f7f7;
+    background-color: #acffac;
+    padding: 15px 20px 10px 20px;
+    color: #333;
+    text-align: left;
+	width: 500px;
+	display:none;
+
+}
+
+div.instructions {
+	width: 500px;
+    border: 2px solid #f7f7f7;
+    background-color: #ffffac;
+    padding: 15px 20px 10px 20px;
+    color: #333;
+    text-align: left;
+	display:none;
+}
+
+div.callout_title {
+	font-weight: bold;
+	text-align: left;
+	width: 75%;
+	float: left;
+	margin-bottom: 12px;
+}
+
+div.callout_close {
+	text-align: right;
+	width: 25%;
+	float: right;
+	margin-bottom: 12px;
+}

@@ -1,0 +1,16 @@
+<%= render :partial => type + '/header',  :locals => { :model => model } %>
+<hr>
+<%= render :partial => type + '/xml',  :locals => { :xml => xml } %>
+<hr>
+<div class="instructions">
+<p>Not right?  Edit the file:
+<%= @model.get_generator.scraper_filename() %>
+directly, and type:
+</p>
+<pre>ruby scraper_tester</pre>
+<p> in the app directory.  Hit 'retry' when you think you've got it.</p>
+</div>
+
+<%= link_to  "Retry" , model.path() + "/verify_scraper", :method => :put  %>
+<%= link_to  "Next" , model.path() + "/confirm", :method => :put  %>
+	

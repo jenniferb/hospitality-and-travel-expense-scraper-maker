@@ -1,0 +1,254 @@
+/* CLF 2.0 TEMPLATE VERSION 1.02 | VERSION 1.02 DU GABARIT NSI 2.0 */
+/* LEFT-HAND NAVIGATION CSS BEGINS | DEBUT DU CSS DU NAVIGATION DE GAUCHE */
+
+div.left div.lineAbove {border-top: 8px solid #578; padding-top: 0px; margin-top: 0px;}
+div.left div.lineUnder {border-bottom: 8px solid #578;padding-bottom: 2px;}
+
+/* GENERAL CSS BEGINS | DEBUT DU CSS GENERAL */
+
+/* HEADING styles | STYLES pour en-têtes */
+
+div.center .docTitle{border:none;width: 99%;}
+div.center .docTitleSeries{border:1px solid #CCC;background-color:#eee;width:99%;padding:2px 2px 2px 2px;text-align:center;}
+
+/* END of heading styles | FIN des styles pour en-têtes */
+
+/* STYLES for Tables | STYLE pour les tables */
+
+div.center table {background-color: #FFF;margin-bottom: 2%;}
+
+.borderLeft {border-left: 1px solid #000;}
+.borderRight {border-right: 1px solid #000;}
+.borderTop {border-top: 1px solid #000;}
+.borderBottom {border-bottom: 1px solid #000;}
+.borderAll {border: 1px solid #000;}
+
+.benefitsTable th {background-color:#eee;color:#000;vertical-align:bottom;font-size:85%;text-align:left;}
+.benefitsTable td {background-color:#FFF;border:1px solid #CCC;vertical-align:bottom;font-size:85%;text-align:right;}
+.benefitsCalc h2 {background-color: #eee;	color: #000; margin: 12px 2px 2px 0px;	padding: 5px 4px 4px 6px; border-bottom: 1px solid #578;	border-right: 1px solid #578;	font-size: 1.25em;}
+.benefitsCalcBox{border: 1px  solid #000000; width: 75px;}
+
+.menuTable table {width: 100%; margin-bottom: 2%;}
+.menuTable h2 {background-color: #eee;	color: #000; margin: 8px 2px 0px 2px; padding: 6px 4px 4px 8px; border-bottom: 1px solid #578; border-right: 1px solid #578; font-size: 1.25em;}
+.menuTable h3 {font-size: 1.15em; background-color: #eee; margin: 8px 0px 2px 0px; padding: 3px 0px 3px 3px;}
+.menuTable th {background-color:#eee;color:#000;text-align:left;border-bottom: 1px solid #578;border-right: 1px solid #578;}
+.menuTable td {background-color:#fff; vertical-align:top; width:50%; border:1px solid #CCC;}
+.menuTable ul {margin-top:10px; margin-bottom:1%; margin-left:15px;}
+.menuTable li {list-style-type:disc; padding-left:0%; margin-left:1%;}
+
+.flexTable table, .flexMenuTable table{margin-bottom: 2%;}
+.flexTable th, .flexMenuTable th {background-color: #eee;padding-bottom: 3px;padding-top: 3px;padding-left: 5px;border: 1px solid #ccc;vertical-align: bottom;}
+.flexTable td, .flexMenuTable td {background-color:#FFF;vertical-align:top;border:1px solid #CCC;}
+.flexTable td.lightgreyBG, .flexMenuTable td.lightgreyBG {background-color:#eff;}
+
+.flexMenuTable ul {margin-top:10px;margin-bottom:1%;margin-left:2px;}
+.flexMenuTable li {list-style-type:none; margin-bottom:1%;}
+.flexMenuTable li li {list-style-type: disc;margin-left: 5%;margin-top: 1%;margin-bottom: 1%;}
+.flexMenuTable h2 {background-color: #eee; color: #000; margin: 12px 2px 2px 2px;	padding: 5px 4px 4px 8px; border-bottom: 1px solid #578;	border-right: 1px solid #578;	font-size: 1.25em;}
+.flexMenuTable h3 {font-size: 1.15em; padding-bottom: 3px; padding-top: 3px; padding-left: 5px; margin: 8px 0% 2px 0px;}
+
+.threeColEqTable table {width: 97%;}
+.threeColEqTable h2 {background-color: #eee; color: #000; width: 96%; margin: 2px 2px 0px 2px; padding: 5px 4px 4px 8px; border-bottom: 1px solid #578; border-right: 1px solid #578; font-size: 1.25em;}
+.threeColEqTable th {background-color:#eee; color:#000; text-align:left; width:33%; border: 1px solid #ccc;}
+.threeColEqTable td {vertical-align:top; width:33%; border: 1px solid #ccc;}
+.threeColEqTable ul {margin-top:10px;margin-bottom:1%;margin-left:15px;}
+.threeColEqTable li {list-style-type:disc;padding-left:0%;margin-left:1%;}
+
+.mediumFontTable table {width: 100%;font-size: 8.5pt;}
+.mediumFontTable th {background-color:#ccc;color:#000;text-align:left;vertical-align:bottom;}
+.mediumFontTable td {background-color:#FFF;vertical-align:top;}
+
+.gsthstRebate th {background-color:#eee;color:#000;border:1px solid #CCC;vertical-align:bottom;width:40%;text-align:left;}
+.gsthstRebate td {background-color:#FFF;border:1px solid #CCC;vertical-align:bottom;font-size:90%;}
+
+.stats th {background-color:#eee;color:#000;border:1px solid #ccc;vertical-align:bottom;font-size:85%;text-align:left;}
+.stats td {background-color:#FFF;border:1px solid #CCC;vertical-align:bottom;font-size:85%;}
+
+.detailsTable table, .CVITPclinic table {width: 100%;}
+.detailsTable th, .CVITPclinic th {background-color: #eee;color: #000;border: 1px solid #ccc;vertical-align: top;	width: 40%;	text-align: right;}
+.detailsTable td, .CVITPclinic td {background-color:#fff;border: 1px solid #ccc;}
+
+.pageNavCorp{background-color:#eee; border:1px  solid #ccc; padding: 2px  2px  2px  2px ;margin-bottom: 1%;}
+.pageNavCorp ul {margin-top:5px;margin-bottom:1%;margin-left:15px;}
+.pageNavCorp li{list-style-type:disc;padding-left:0%;margin-left:1%;}
+
+.whatsNewIndex h2, .mediaRoomIndex h2 {background-color:#eee;color:#000;width:97%;margin:2% 2px 0px 2px;padding:5px 4px 4px 8px;border-bottom:1px solid #578; border-right: 1px solid #578; font-size:1.25em;}
+.whatsNewIndex ul, .mediaRoomIndex ul {margin-top:10px;margin-bottom:1%;margin-left:2px; padding-left:5px;}
+.whatsNewIndex li, .mediaRoomIndex li {list-style-type:none;margin-bottom:2%; margin-top: 2%; margin-left:0; padding-left:0;}
+.whatsNewIndex li li, .mediaRoomIndex li li {list-style-type: disc;margin-left: 5%;margin-top: 1%;margin-bottom: 1%;}
+
+.whatsNewIndex table {border: 1px solid #ccc; margin:2px 2px 0px 2px;padding:5px 4px 4px 8px;}
+
+.tableWide th {background-color:#eee;color:#000000;vertical-align:bottom;font-size:85%;text-align:left;}
+.tableWide td {background-color:#FFFFFF;border:1px solid #CCCCCC;vertical-align:top;font-size:85%;}
+
+div.center table.sortable a.sortheader {background-color:#eee; color:#000; font-weight: bold; text-decoration: none; display: block;}
+div.center table.sortable .span.sortarrow {color: black; text-decoration: none;}
+div.center table.sortable{background-color:#000;margin-top:20px;}
+div.center table.sortable th{background-color:#eee;border:1px solid #CCC;vertical-align:bottom;}
+div.center table.sortable td{background-color:#fff;border:1px solid #CCC;}
+
+/* END of table styles | FIN des styles pour tables */
+
+/* STYLES for lists | STYLES pour listes */
+
+.checklist ul {margin-top:10px;margin-bottom:1%;margin-left:0px;}
+.checklist li {list-style-type: none; margin-bottom: 2%;	margin-top: 1%; list-style-image: url(../images/box.gif); padding-left: 1%;}
+.checkmark li li {list-style-type: square;list-style-image: none;margin-left: 2%}
+
+.checkmark ul {margin-top:10px;margin-bottom:1%;margin-left:0px;}
+.checkmark li {list-style-type: none; margin-bottom: 2%; margin-top: 1%; list-style-image: url(../images/checkmarkb.gif); padding-left: 1%;}
+.checklist li li {list-style-type: square;list-style-image: none;margin-left: 2%}
+
+.dblSpList ul {margin-top: 1%;}
+.dblSpList ol {margin-top: 1%;}
+.dblSpList li {margin-bottom: 1.5%;}
+.dblSpList li li {margin-bottom: 1%;}
+
+ul.bulletLowIndent li {margin-left: -2%; margin-top: 1%; margin-bottom: 1%;}
+ul.bulletLowIndent li li {margin-left: -3%;}
+
+ul.noBulletNoIndent {list-style-type: none;margin-left:0px;}
+ul.noBulletNoIndent li li {list-style-type: none;margin-left:-4%;padding-left: 0px;}
+
+ul.expenseList {list-style-type: none; margin-left:0px; padding-left: 0px;}
+ul.expenseList li {margin-bottom: 1.5%; padding-bottom: 0.5%;}
+ul.expenseList a {display: block; margin-left: 1%;padding-left: 1%; margin-top: 0%; margin-bottom: 0%; padding-bottom: 0%;}
+
+ul.noBullet li li {list-style-type: none;margin-left:0%;}
+
+ul.lineIndex {list-style-type: none;margin-left: 3%;padding: 0;border: none;top: 10px;width: 80%;}
+.lineIndex li {white-space: nowrap;margin: 0;padding: 0;border: none;float: left;min-height: 1.3em;min-width: 2em;font-size: 10.0pt;color: #578;background-color: #fff;}
+.lineIndex li{width: 7%;line-height: 2em;text-align: center;}
+
+.lineIndex li a:link {color: #039;background-color: #fff;text-decoration: underline;font-weight: bold;padding: 0;border: none;width: 50%;}
+.lineIndex li a:hover {color: #c03;background-color: #fff;text-decoration: underline;font-weight: bold;padding: 0;border: none;width: 50%;}
+.lineIndex li a:visited {color: #039;background-color: #fff;text-decoration: underline;font-weight: bold;padding: 0;border: none;width: 50%;}
+
+/* END of list styles | FIN des styles pour listes */
+
+/* MISC content styles | STYLES divers pour contenu */
+
+hr.red65{color: #d02;width: 65%;text-align: left;}
+hr.red{color: #d02;text-align: left;}
+
+.newPrintPage{page-break-after: always;}
+
+.strikeThrough{text-decoration: line-through;}
+
+.slipMap {margin-left: 5%;}
+
+.button{background-color: #CCCCCC;padding: 1% 1% 1% 1%;margin-right: 10px;border-top: 2px  solid #FFFFFF;border-right: 2px  solid #666666;border-bottom: 2px  solid #666666;border-left: 2px  solid #FFFFFF;float: left;text-align: center;font-weight: bold;}
+div.button a:link{text-decoration: none;color: Black;}
+div.button a:visited{text-decoration: none;color: Black;}
+div.button a:hover{text-decoration: none;color: Black;}
+
+.button85{width: 85px; background-color: #CCCCCC; padding: 0.5% 0.5% 0.5% 0.5%; margin-right: 10px;border-top: 2px  solid #FFFFFF;border-right: 2px  solid #666666;border-bottom: 2px  solid #666666;border-left: 2px  solid #FFFFFF;float: left;text-align: center;font-weight: bold;}
+div.button85 a:link{text-decoration: none;color: Black;}
+div.button85 a:visited{text-decoration: none;color: Black;}
+div.button85 a:hover{text-decoration: none;color: Black;}
+
+.buttonRed{background-color: #c02;border: 5px;border-style: outset;border-color: #d03;text-align: center;color: #fff;font-weight: bold; padding: 5px 3px 5px 5px; display: block;text-decoration: none; width: 136px;}
+
+.example{padding: 5px 5px 5px 5px;width: 95%; border-top:9px solid #eee;  border-bottom:5px solid #eee;display:block;}
+
+div.center .note{margin-left: 5%; width: 85%;display:block;}
+
+.noticeGrey{border: 1px solid #ccc;background-color: #eee;padding: 5px 5px 5px 5px;display:block;}
+.noticeRed{border:1px solid #c03; padding: 5px 5px 5px 5px;display:block;}
+.taxtip, .additionalinfo, .noticeYellow{padding-left:18px; padding:5px 5px 5px 5px; background-color:#ffc; border:1px solid #999;display:block;}
+.noticeCraBlue{padding:5px 5px 5px 5px; background-color:#eef; border:1px solid #578;display:block;}
+.greyPullout{margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: #CCC; border : none; padding: 10px 10px 10px 10px; line-height: 150%;display:block;}
+.noticeRedYellow{border:2px solid #c03; padding: 5px 5px 5px 5px; background-color:#ffc;display:block;}
+
+.lineBoxGrey65{border: 1px solid #ccc; padding: 5px 5px 5px 5px; width:65%;display:block;}
+.lineBoxGrey{border: 1px solid #ccc; padding: 5px 5px 5px 5px;display:block;}
+.lineBox{border:1px solid black; padding: 5px 5px 5px 5px;display:block;}
+.lineBoxThick{border:4px solid black; padding: 5px 5px 5px 5px;display:block;}
+.lineBoxCraBlue{border: 1px solid #578; padding: 5px 5px 5px 5px;display:block;}
+
+.imgPad {padding-right: 7px; vertical-align: middle;}
+.imgPad45 {padding-right: 7px; padding-bottom: 45px; vertical-align: top;}
+.imgPad85 {padding-right: 7px; padding-bottom: 85px; vertical-align: top;}
+
+img.floatLeftImage {float: left; vertical-align: middle; margin-right: 1%; padding-right: 2%; margin-bottom: 1%; padding-bottom: 2%;}
+img.floatRightImage {float: right; vertical-align: middle; margin-left: 1%; padding-left: 2%; margin-bottom: 1%; padding-bottom: 2%;}
+
+div.itemDiv{margin-bottom: 1%; padding-bottom: 2%; margin-left: 0.5%;padding-left: 0.5%; border-bottom: 2px solid #578;}
+.lgDropList{margin-left: 0px; width: 400px;}
+
+.subtotal{border-bottom: 1px; border-bottom-style: solid; border-bottom-color: #000000;}
+.total{border-bottom-style:double; border-bottom-color:#000000}
+
+a.glosslink:link {cursor: help; text-decoration: none; border-bottom: 1px dashed #039;	color: #039; line-height: inherit;}
+a.glosslink:visited {cursor: help; text-decoration: none; border-bottom: 1px dashed #663;	color: #663; line-height: inherit;}
+a.glosslink:hover {cursor: help;text-decoration: none;	border-bottom: 1px dashed #039; color: #039;	line-height: inherit;}
+
+div.center dd{margin-bottom: 2%;}
+dl.glossary dt{font-weight: bold; padding-bottom: 1%;}
+dl.glossary dd p{margin-top: 1%; margin-bottom: 1%;}
+dl.glossary dd ul{padding-top: 1%; margin-bottom: 2%;}
+dl.glossary dd ol{padding-top: 1%; margin-bottom: 2%;}
+dl.glossary div.note{margin-top: 1%;}
+dl.glossary div.note p{margin-bottom: 0.5%;}
+
+div.center fieldset{padding-bottom: 2%;border: thin solid #ccc;padding-left: 1%;}
+div.center legend{font-weight: bold;}
+
+.clearLeft{clear: left;}
+.clearRight{clear: right;}
+
+.width100{width:75px;}
+
+.craBlue{color: #578;}
+.craBlueBG{background-color: #578;}
+
+.ltCraBlueBG{background-color: #eef;}
+
+.craRed{color: #d02;}
+.craRedBG{background-color: #d02;}
+
+.underline{text-decoration: underline; width: inherit; text-align: left;}
+
+/* END of MISC content styles | FIN des styles divers pour contenu */
+
+.lnavSearch form {
+	font-size: 10.0pt;
+	vertical-align: middle;
+	margin: 0;
+	padding: 2px 3px 2px 2px;
+	border-bottom: 1px solid #999;
+	background-color: #eee;
+}
+
+.lnavSearch input {
+	margin-top: 0.25%;
+	margin-bottom: 0.25%;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* GENERAL CSS ENDS | FIN DU CSS GENERAL */
+
+/* SEARCH PAGE CSS BEGINS | DEBUT DU CSS POUR LA RECHERCHE */
+
+.box-search{padding: 12px;margin-bottom: 2%;border: 1px  solid #999999;width: 93%;margin-top: 0px;float: left;}
+.box-search-item{float:  left}
+.box-search-item-padded{float:  left;  padding-left:  50px ; }
+.box-search-item2{padding-right:  8px ;  float:  left}
+.box-search-button{float:  right}
+.box-search-labelbse{padding-right:  8px ;  float:  left;  width:  110px ;  text-align:  right}
+.box-search-labelbsf { padding-right:  8px ;  float:  left;  width:  120px ;  text-align:  right}
+.box-search-labelase { padding-right:  8px ;  float:  left;  width:  170px ;  text-align:  right}
+.box-search-labelasf { padding-right:  8px ;  float:  left;  width:  120px ;  text-align:  right}
+.box-search-labelf { padding-right:  8px ;  float:  left;  width:  210px ;  text-align:  right}
+.box-search-labe2f { padding-right:  8px ;  float:  left;  width:  150px ;  text-align:  right}
+.box-search-widgets {float:  left}
+.box-search-label1 { padding-right:  8px ;  float:  left}
+.box-search-label2 { padding-right:  8px ;  float:  left;  width:  75px ; }
+.box-clear {clear:  both;  margin-top:  0px ;  margin-bottom:  0px ;  padding-top:  5px ;  padding-bottom:  5px ;  }
+.box-search-label {padding-right: 8px;float: left;padding-bottom: 2%;}
+
+/* SEARCH PAGE CSS END | FIN DU CSS POUR LA RECHERCHE */
+
+

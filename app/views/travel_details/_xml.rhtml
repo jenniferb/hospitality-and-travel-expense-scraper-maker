@@ -1,0 +1,22 @@
+<hr>
+<h3>Travel Expense For:
+<%= xml.elements['//person_name_and_position/first_name'].text if xml.elements['//person_name_and_position/first_name'] %>
+<%= xml.elements['//person_name_and_position/last_name'].text if xml.elements['//person_name_and_position/last_name'] %> --
+<%= xml.elements['//person_name_and_position/position'].text if xml.elements['//person_name_and_position/position'] %>
+</h3>
+<hr>
+<table>
+	<tr>
+		<td>Start Date</td>
+		<td>End Date</td>
+		<td>Purpose</td>
+		<td>Airfare</td>
+		<td>Other Transportation</td>
+		<td>Accomodation</td>
+		<td>Meals</td>
+		<td>Other</td>
+		<td>Total</td>
+
+	<%= render :partial => 'report', :collection => xml.elements.to_a('//report')  %>
+</table>
+<hr>

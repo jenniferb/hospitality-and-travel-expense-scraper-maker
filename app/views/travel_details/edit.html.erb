@@ -1,0 +1,55 @@
+<%= render :partial => 'header', 
+		   :locals => { :model => @model } %>
+
+<%= render :partial => 'scrapeables/edit_header', 
+		   :locals => { :model => @model } %>
+
+<div class="instructions">
+	<%=  callout_header "Instructions", ".instructions" %>
+	<ol>
+		<li>Open the Page Cache link in another tab</li>
+		<li>Use firebug to find the 'Base XPath' -- the element above the expense report table</li>
+		<li>Is the person's name and position inside the table?  If so, click yes</li>
+		<li>If the person's name is inside the table, it is usually in the first
+		row (/tr[1]/td[2]).  If it is somewhere else, put the offset from the base XPath here.
+		<li>Select the format of the person's name and position -- usually one of three choices</li>
+		<li>Is the date in one cell or two?  Usually it is in one.</li>
+		<li>The other fields indicate the table rows containing the different values</li>
+	</ol>
+</div>
+<div class="example" id="example1">
+	<%=  callout_header "Example", "#example1" %>
+
+	<p>The following values are used for <%= link_to "this page", "/examples/example1/Marchand-travel-25-11-2007.htm" %>.</p>
+<table>	
+	<tr>
+		<td>Base XPath</td>
+		<td>/html/body/div[10]</td>
+	</tr>
+	<tr>
+		<td>Name Inside Table?</td>
+		<td>true</td>
+	</tr>
+	<tr>
+		<td>Offset XPath to Person Name/Position</td>
+		<td>/tr[1]/td[2]</td>
+	</tr>
+	<tr>
+		<td>Person Name Format</td>
+		<td>Last, First, Position</td>
+	</tr>
+	<tr>
+		<td>Date Format</td>
+		<td>One Cell</td>
+	</tr>
+	<tr>
+		<td>Other Options</td>
+		<td>Default</td>
+	</tr>
+
+</table>
+</div>
+
+<%= render :partial => 'scrapeables/edit', 
+		   :locals => { :model => @model, :class_sym => :travel_detail } %>
+

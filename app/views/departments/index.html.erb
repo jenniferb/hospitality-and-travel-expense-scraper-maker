@@ -1,0 +1,6 @@
+<h1>Departments</h1>
+<table>
+	<%= render :partial => 'department', :collection => @departments %>
+</table>
+<hr>
+<%= link_to 'Add New Department', new_department_url %>

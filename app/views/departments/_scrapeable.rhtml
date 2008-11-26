@@ -1,0 +1,15 @@
+<li> 
+	<%= scrapeable.name %>
+		<% if (scrapeable.completed == true ) %> 
+		 Complete. <%= link_to 'Redo', scrapeable.path() + "/edit" %>
+		<% else %>
+
+    <% if (scrapeable.is_started? )%>
+		<% if( scrapeable.filled_in? ) %>
+			<%= link_to 'Next', scrapeable.path()  %> 
+		<% else %>
+			<%= link_to 'Next', scrapeable.path() + "/edit" %> 
+		<% end %>			 
+	<%  end %>
+	<% end %>
+</li>

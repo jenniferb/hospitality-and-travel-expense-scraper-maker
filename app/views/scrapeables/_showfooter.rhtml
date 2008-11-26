@@ -1,0 +1,20 @@
+
+<%= link_to  "edit" , model.path() + "/edit" %>
+<% if model.uses_template? %>
+	<% if (! model.get_generator.template_created? ) %>
+		<%= link_to  "create template" , model.path() + "/create_template" , :method=>:put %>
+	<% else %>   
+		<%= link_to  "verify template" , model.path() + "/verify_template" , :method=>:put %>
+		<% if( ! model.get_generator.scraper_created? ) %>	
+			<%= link_to "create scraper", model.path() + "/create_scraper", :method=>:put %>
+		<% else %>
+			<%= link_to "verify scraper", model.path() + "/verify_scraper", :method=>:put %>
+		<% end %>
+	<% end %>														
+<% else %>	
+		<% if( ! model.get_generator.scraper_created? ) %>	
+			<%= link_to "create scraper", model.path() + "/create_scraper", :method=>:put %>
+		<% else %>
+			<%= link_to "verify scraper", model.path() + "/verify_scraper", :method=>:put %>
+		<% end %>
+<% end %>	

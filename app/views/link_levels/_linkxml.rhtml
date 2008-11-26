@@ -1,0 +1,12 @@
+<tr>
+		<td>
+			<% if linkxml.elements['title'] %>
+			<%= linkxml.elements['title'].text %>
+			<% end %>
+		</td>
+		<td>
+		<% if linkxml.elements['url'] %>
+		<%= link_to(  'Link', linkxml.elements['url'].text ) %>
+		<% end %>
+		</td>
+</tr>

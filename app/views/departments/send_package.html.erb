@@ -1,0 +1,10 @@
+<h1>Department: 
+<%= @department.name %></h1>
+
+Zip file of scrapers created here:
+<pre>
+<%= @package.name %> 
+</pre>
+Please send to jennifer@visiblegovernment.ca
+<hr>
+<%= link_to "Done" , department_url(@department) + "/done", :method => :put  %>

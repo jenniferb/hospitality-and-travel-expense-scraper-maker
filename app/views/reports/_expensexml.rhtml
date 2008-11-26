@@ -1,0 +1,6 @@
+<tr>
+		<td><%= expensexml.elements['start_date'].text %></td>
+		<td><%= expensexml.elements['end_date'].text %></td>
+		<td><%= expensexml.elements['desc'].text if( expensexml.elements['desc'] ) %></td>		
+		<td><%= expensexml.elements['cost'].text if( expensexml.elements['cost'] ) %></td>
+</tr>

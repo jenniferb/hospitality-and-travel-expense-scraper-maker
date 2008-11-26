@@ -1,0 +1,73 @@
+
+<h2>Create New Department Scraper</h2>
+
+<%= render :partial => 'scrapeables/edit_header', 
+		   :locals => { :model => @model } %>
+
+<div class="instructions">
+	<%=  callout_header "Instructions", ".instructions" %>
+	<ol>
+		<li>Enter the department name as it appears <a href=http://www.tbs-sct.gc.ca/pd-dp/gr-rg/index-eng.asp>here</a> </li>
+		<li>Enter the department top link as linked here <a href=http://www.tbs-sct.gc.ca/pd-dp/gr-rg/index-eng.asp>here</a></li>
+		<li>Count the number of clicks from that page until you see the details of an expense report</li>
+		<li>Enter the click where you made a choice between hospitality and travel expense reports (see examples)</li>
+	</ol>
+</div>
+<div class="example" id="example1">
+	<%=  callout_header "Example", "#example1" %>
+
+<p>The department 'Verterans Review and Appeal Board Canada' has <%= link_to "this page", "/examples/example1/VRAB-TACRA_Disclosure.htm" %>
+linked from the intra-governmental listing.  That link is the base of the tree.</p>
+
+<p>From that base, there are 4 clicks until you see an expense report:</p>
+<ul>
+	<li>Click 1: 'Travel and Hospitality Expenses'</li>
+	<li>Click 2: 'Marchand, Victor, Chair, VRAB</li>
+	<li>Click 3: '2008'</li>
+	<li>Click 4: Meetings with Minister's staff; Briefing with Ombudsman; Royal Canadian Legion Christmas Luncheon; etc.</li>
+</ul>		
+<p>The split between travel and hospitality links is on the last 
+click (this is generally the case, though not always.)</p>
+
+<p>The values for this department are:</p>
+ 
+<table>	
+	<tr>
+		<td>Title:</td>
+		<td>Veterans Review and Appeal Board Canada</td>
+	</tr>
+	<tr>
+		<td>Url:</td>
+		<td>http://www.vrab-tacra.gc.ca/VRAB-TACRA_Disclosure.htm</td>
+	</tr>
+	<tr>
+		<td>Is Department Scrape-able:</td>
+		<td>Yes</td>
+	</tr>
+
+	<tr>
+		<td>Number of clicks from top until you see an expense detail report:</td>
+		<td>4</td>
+	</tr>
+
+	<tr>
+		<td>Click where split between hospitality and travel links occurs: </td>
+		<td>4</td>
+	</tr>
+
+</table>
+</div>
+
+<% error_messages_for :department %>
+
+<% form_for :department, :url => departments_url, :html => { :method => :post }  do |form| %>
+<p>Title: <br><%= form.text_field :name, :size => 60 %></p>
+<p>Url as linked from <a href=http://www.tbs-sct.gc.ca/pd-dp/gr-rg/index-eng.asp>here</a>: <br><%= form.text_field :url, :size => 60 %></p>
+<p>Is Department Scrapeable:<br>
+<%= select :department, "is_scrapeable", ["Yes", "No - Link Broken", "No - Reports are PDF/Excel/Other", "No - Site does not follow a consistent pattern", "No - No expenses found on site", "No - Other" ], {:selected=>"Yes"} %></p>
+<div id="if_scrapeable">
+	<p>If department is scrapeable:</p>
+<p>Number of clicks from top until you see an expense detail report: <br><%= form.text_field :levels, :size => 60 %></p>
+<p>Click where split between hospitality and travel links occurs: <br><%= form.text_field :split_level, :size => 60 %></p>
+<%= submit_tag "Add Department"  %> 
+<% end %>

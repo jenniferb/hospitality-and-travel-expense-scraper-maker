@@ -1,0 +1,13 @@
+<tr>
+	<td> 
+		<%= link_to department.name, department_url( department ) %>
+	</td>
+	<td> 
+	<% if department.completed %>
+		Complete.
+	<% end %>
+	</td>
+	<td>
+		<%= link_to "Delete", department_url( department ), :method => :delete %> 
+	</td>
+</tr>

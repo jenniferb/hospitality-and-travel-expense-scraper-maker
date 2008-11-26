@@ -1,0 +1,11 @@
+<h3>Scraper Created.</h3>
+<p>Scraper created in file <%= model.get_generator.scraper_filename() %>
+
+<div class='instructions'>
+<p>Note: If you get a failure in the next step, you can test the scraper directly with:</p>
+<pre>ruby scraper_tester</pre>
+<p>in the app directory.</p>
+</div>
+
+
+<%= link_to "Next", model.path() + "/verify_scraper", :method => :put %>

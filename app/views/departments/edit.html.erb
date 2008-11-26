@@ -1,0 +1,12 @@
+<h2>Edit Department
+<%= @model.name %>
+</h2>
+<% error_messages_for :department %>
+
+<% form_for :department, :url => department_url(@model), :html=> { :method=>:put } do |form| %>
+<p>Title:<%= form.text_field :name, :size => 60, :value => @model.name %>
+<p>Url: <br><%= form.text_field :url, :value => @model.url, :size => 60 %></p>
+<p>Number of clicks from top until you see an expense detail report: <br><%= form.text_field :levels, :size => 60 , :value => @model.levels %>
+<p>Click where split between hospitality and travel links occurs: <br><%= form.text_field :split_level, :size => 60, :value => @model.split_level %>
+<%= submit_tag 'Save' %> 
+<% end %>

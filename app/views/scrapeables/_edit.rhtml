@@ -1,0 +1,30 @@
+
+<% error_messages_for @model.class %>
+
+
+<% form_for class_sym, :url => {:action => 'show', :id => @model.id, :department_id => @model.department_id}, :html => { :method => :put }  do |form| %>
+<p>Url: <br><%= form.text_field :url, :size => 60, :value => @model.url %>
+ <%= link_to 'Page Cache', @model.page_cache%></p>
+<hr>
+<table>
+<% for trait in @model.get_traits %>
+  <tr>
+  	<td><p><%= trait.label %></p></td>
+	<td>
+  <% if (trait.type == "textfield" )%>
+    <%= form.text_field trait.trait_name, :size => 60, :value => @model[trait.trait_name] %></p>
+  <% end %>
+  <% if (trait.type == "select" )%>
+    <%= select class_sym, trait.trait_name, trait.options, {:selected=>@model[trait.trait_name]} %></p>
+  <% end %>
+  <% if (trait.type == "checkbox" )%>
+    <%= check_box class_sym,trait.trait_name,:checked =>@model[trait.trait_name] %>
+  <% end %>
+  	</td>
+  </tr>
+<% end %>
+</table>
+
+<hr>
+<%= submit_tag "Save"  %> 
+<% end %>

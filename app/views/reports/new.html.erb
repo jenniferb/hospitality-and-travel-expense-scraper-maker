@@ -1,0 +1,17 @@
+<h1>New Report for 
+<%= @report.department.name %>
+</h1>
+<% error_messages_for :report %>
+
+<% form_for :report, :url => department_reports_url, :html => { :method => :post }  do |form| %>
+<p>Report Name: <br><%= form.text_field :report_name, :size => 60, :value => 'Default' %></p>
+<p>Url: <br><%= form.text_field :url, :size => 60 %></p>
+<p>Name of Person: <br><%= form.text_field :person_name, :size => 60 %></p>
+<p>Position of Person: <br><%= form.text_field :person_position, :size => 60 %></p>
+<p>First Expense Start Date: <br><%= form.text_field :first_expense_start, :size => 60 %></p>
+<p>First Expense End Date: <br><%= form.text_field :first_expense_end, :size => 60 %></p>
+<p>First Expense Description: <br><%= form.text_field :first_expense_desc, :size => 60 %></p>
+<p>First Expense Cost: <br><%= form.text_field :first_expense_cost, :size => 60 %></p>
+<%= submit_tag "Add Report"  %> 
+<% end %>
+

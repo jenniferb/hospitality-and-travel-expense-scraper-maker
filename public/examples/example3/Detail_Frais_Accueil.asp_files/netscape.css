@@ -1,0 +1,691 @@
+TABLE.EN_REGION
+{
+	BORDER-COLOR: black;
+	BORDER-STYLE: solid;
+	BORDER-WIDTH: 1px;
+}
+TD.DERNIER_COMM_FR
+{
+	background-image: url("https://www.dec-ced.gc.ca/images/derniers_communiques_FR.jpg");
+	background-repeat: no-repeat;
+	height: 21px;
+}
+TD.DERNIER_COMM_EN
+{
+	background-image: url("https://www.dec-ced.gc.ca/images/derniers_communiques_EN.jpg");
+	background-repeat: no-repeat;
+	height: 21px;
+}
+TD.MENU 
+{
+/*
+    BACKGROUND: none;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-BOTTOM-COLOR: #993333;
+    BORDER-BOTTOM-STYLE: solid;
+*/
+}
+A.REGION:link
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+A.REGION:visited
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+A.REGION:active
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px; 
+   COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+A.REGION:hover
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px; 
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: underline;
+}
+TD.REGION
+{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+TD A.MENU:link
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU:visited
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU:active
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: #336699;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU:hover
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    BACKGROUND-COLOR: #993333;
+    COLOR: white;
+    DISPLAY: block;
+}
+TD.MENU_SELECTED 
+{
+    BACKGROUND-COLOR: #993333;
+}
+TD A.MENU_SELECTED:link
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: white;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU_SELECTED:visited
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: white;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU_SELECTED:active
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: white;
+    DISPLAY: BLOCK;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none;
+}
+TD A.MENU_SELECTED:hover
+{
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    COLOR: white;
+    DISPLAY: block;
+}
+
+
+SPAN.BLOCK
+{
+	DISPLAY: BLOCK;
+	LIST-STYLE-POSITION: outside;
+	MARGIN-LEFT: 4px;
+}
+SPAN.BLOCK_NIV_1
+{
+	DISPLAY: BLOCK;
+	LIST-STYLE-POSITION: outside;
+	MARGIN-LEFT: 6px;
+}
+SPAN.BLOCK_NIV_2
+{
+	DISPLAY: BLOCK;
+	LIST-STYLE-POSITION: outside;
+	MARGIN-LEFT: 12px;
+}
+SPAN.BLOCK_NIV_3
+{
+	DISPLAY: BLOCK;
+	LIST-STYLE-POSITION: outside;
+	MARGIN-LEFT: 18px;
+}
+
+BODY
+{
+    BACKGROUND-IMAGE: url(https://www.dec-ced.gc.ca/images/fond_dec_bour.gif);
+    COLOR: #000000;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    BGCOLOR: #ffffff
+}
+BODY.POPUP
+{
+    BACKGROUND-IMAGE: none;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    BGCOLOR: #ffffff
+}
+P
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+}
+SUP
+{
+	FONT-FAMILY: Arial, helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+}
+TD
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+
+}
+
+TD.bold
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: Bold
+}
+
+TD.calendar
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8.5pt
+}
+
+TD.calendarbold
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: Bold
+}
+TD.COMM
+{
+	PADDING-TOP: 15px;
+	PADDING-BOTTOM: 0px;
+}
+TD.COMM_HAUT
+{
+	PADDING-TOP: 7px;
+/*	margin-top: 7px;
+	margin-bottom: 0px;*/
+	PADDING-BOTTOM: 0px;
+/*	padding: 0px;*/
+}
+TD.COMM_BAS
+{
+	PADDING-TOP: 0px;
+/*	margin-top: 0px;
+	margin-bottom: 15px;*/
+	PADDING-BOTTOM: 15px;
+/*	padding: 5px;*/
+}
+TD.BandeCalendrier
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    COLOR: #336699;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+
+
+FONT.colordesign
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #336699;
+}
+
+FONT.colorred
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+}
+
+IMG
+{
+    BORDER-BOTTOM-STYLE: none;
+    BORDER-LEFT-STYLE: none;
+    BORDER-RIGHT-STYLE: none;
+    BORDER-TOP-STYLE: none
+}
+
+A:active
+{
+    COLOR: #993333
+}
+A:link
+{
+    COLOR: #336699
+}
+A:visited
+{
+    COLOR: #993333
+}
+A:hover
+{
+    COLOR: #336699
+}
+
+/*
+A.menu:link
+{
+    COLOR: #336699;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menu:active
+{
+    COLOR: #336699;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menu:visited
+{
+    COLOR: #993333;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menu:hover
+{
+    COLOR: #336699;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menuselected:link
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menuselected:active
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menuselected:visited
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.menuselected:hover
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+*/
+
+H2
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+	 FONT-WEIGHT: bold;
+	 FONT-SIZE: 14pt;
+    MARGIN: 0em;
+    PADDING-BOTTOM: 0em;
+    PADDING-LEFT: 0em;
+    PADDING-RIGHT: 0em;
+    PADDING-TOP: 0em
+}
+
+H2.titre
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 14pt;
+	 FONT-WEIGHT: bold;
+	 COLOR: #000000;
+    MARGIN: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 15px
+}
+
+H3
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+	 FONT-WEIGHT: bold;
+    MARGIN: 0px;
+	 BORDER: 0px;
+	 PADDING: 0px;
+	 MARGIN-BOTTOM: 0px;
+	 MARGIN-LEFT: 0px;
+	 MARGIN-RIGHT: 0px;
+	 MARGIN-TOP: 0px;
+	 BORDER-BOTTOM: 0px;
+	 BORDER-LEFT: 0px;
+	 BORDER-RIGHT: 0px;
+	 BORDER-TOP: 0px;
+	 BORDER-WIDTH: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px
+}
+
+H3.soustitre
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+	 FONT-WEIGHT: bold;
+	 FONT-SIZE: 10pt;
+	 COLOR: #000000;
+	 MARGIN-BOTTOM: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px
+}
+
+H4
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    MARGIN: 0em;
+    PADDING-BOTTOM: 0em;
+    PADDING-LEFT: 0em;
+    PADDING-RIGHT: 0em;
+    PADDING-TOP: 0em
+}
+UL
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    LIST-STYLE: square;
+    FONT-SIZE: 10pt;
+    MARGIN-BOTTOM: 0%
+}
+H1
+{
+    page-break-inside: avoid
+}
+H2
+{
+    page-break-inside: avoid
+}
+H3
+{
+    page-break-inside: avoid
+}
+BLOCKQUOTE
+{
+}
+UL
+{
+}
+OL
+{
+}
+DL
+{
+}
+H1
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H2
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H3
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H4
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H5
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H6
+{
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90
+}
+H2
+{
+    pitch: x-low;
+    pitch-range: 80
+}
+H3
+{
+    pitch: low;
+    pitch-range: 70
+}
+H4
+{
+    pitch: medium;
+    pitch-range: 60
+}
+H5
+{
+    pitch: medium;
+    pitch-range: 50
+}
+H6
+{
+    pitch: medium;
+    pitch-range: 40
+}
+LI
+{
+    richness: 60;
+    pitch: medium;
+}
+LI.espace
+{
+    FONT-SIZE: 10pt;
+    richness: 60;
+    pitch: medium;
+	padding-Bottom: .5em;
+}
+DT
+{
+    richness: 60;
+    pitch: medium
+}
+DD
+{
+    richness: 60;
+    pitch: medium
+}
+DT
+{
+    stress: 80
+}
+B
+{
+    stress: 90;
+    richness: 90;
+    pitch: medium;
+    pitch-range: 60
+}
+STRONG
+{
+    stress: 90;
+    richness: 90;
+    pitch: medium;
+    pitch-range: 60
+}
+I
+{
+    stress: 60;
+    richness: 50;
+    pitch: medium;
+    pitch-range: 60
+}
+U
+{
+    richness: 0
+}
+A:link
+{
+    voice-family: harry, male
+}
+A:visited
+{
+    voice-family: betty, female
+}
+A:active
+{
+    voice-family: betty, female;
+    pitch: x-high;
+    pitch-range: 80
+}
+INPUT
+{
+    FONT-FAMILY: none;
+	 FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt
+}
+TH.entete_tableau
+{
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #336699;
+	FONT-WEIGHT: bold
+}
+FONT.colordesign_menu
+{
+    COLOR: #336699;
+    FONT-FAMILY: Arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none
+}
+td.plansite
+{
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Arial, helvetica, sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+}
+DIV.HEADER_DEC
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+}
+DIV.COMM_DEC
+{
+	POSITION: absolute;
+	TOP: 80px;
+	LEFT: 0px;
+}
+
+DIV.COMM_REGIONS
+{
+	POSITION: absolute;
+	TOP: 190px;
+	LEFT: 0px;
+}
+
+DIV.COMM_ENVIROCLUB
+{
+	POSITION: absolute;
+	TOP: 140px;
+	LEFT: 0px;
+}
+
+DIV.COMM_ECOUTE
+{
+	POSITION: absolute;
+	TOP: 170px;
+	LEFT: 0px;
+}
+
+/* Pomaljo0 Ajout de classes pour normaliser la page splash du site web*/
+.splashbody { margin: 0px 0px 0px 0px; background-color:#FFFFFF; color:#000000; font-family:Arial, Helvetica, sans-serif; font-size:10pt; }
+.splashbody a { color:#0000FF; font-family:Arial, Helvetica, sans-serif; font-size:10pt;} 
+.splashbody a:active { color:#993333; }
+.splashbody a:visited { color:#000099; }
+.aligntop { vertical-align:top; }
+
+/* Pomaljo0 Ajout de l'image de fond pour le menu de gauche agence*/
+.tableau_menu { width:132px; height:446px; border-width:0px; border-collapse:collapse; padding: 0px 0px 0px 0px; }
+.tableau_menu td { border-width:0px; border-collapse:collapse; padding: 0px 0px 0px 0px; }
+.menu_img_fond_FR { background-image:url(../Images/Menu_lateral/menu-fond-fr.jpg);  vertical-align:top; background-position:top; background-repeat:no-repeat; }
+.menu_img_fond_EN { background-image:url(../Images/Menu_lateral/menu-fond-en.jpg);  vertical-align:top; background-position:top; background-repeat:no-repeat; }

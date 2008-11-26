@@ -1,0 +1,14 @@
+<hr>
+
+<p>Expense Report For <%= reportxml.root.elements['report'].elements['person'].elements['person_name'].text %></p>
+<p>Position: <%= reportxml.root.elements['report'].elements['person'].elements['person_position'].text %></p>
+
+<table>
+	<tr>
+		<td>Expense Start</td>
+		<td>Expense End</td>
+		<td>Decription</td>
+		<td>Cost</td>	
+	<%= render :partial => 'expensexml', :collection => reportxml.elements.to_a('//expenses')  %>
+</table>
+

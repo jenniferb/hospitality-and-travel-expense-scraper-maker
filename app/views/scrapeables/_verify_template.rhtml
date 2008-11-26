@@ -1,0 +1,12 @@
+<%= render :partial => type + '/header',  :locals => { :model => model } %>
+<%= render :partial => type + '/xml',  :locals => { :xml => xml } %>
+
+<p>Not right?  You have two options:</p>
+<ul>
+	<li>Hit Oops to try other search patterns or XPaths.</li>
+	<li>Create the scraper anyway and edit it by hand.</li>
+</ul>
+ 
+<%= link_to  "Oops" , @model.path() + "/edit"  %>
+<%= link_to  "Next" , @model.path() + "/create_scraper", :method => :put  %>
+

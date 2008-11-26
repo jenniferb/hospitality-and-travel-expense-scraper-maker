@@ -1,0 +1,48 @@
+
+<%= render :partial => 'header', 
+		   :locals => { :model => @model } %>
+
+<%= render :partial => 'scrapeables/edit_header', 
+		   :locals => { :model => @model } %>
+
+<div class="instructions">
+	<%=  callout_header "Instructions", ".instructions" %>
+	<ol>
+		<li>Open the Page Cache link in another tab</li>
+		<li>Cut and paste either:
+			<ul>
+				<li>example link text</li>
+				<li>an XPath for the link copied from Firebug</li>
+			</ul>
+		</li>
+	</ol>
+</div>
+<div class="example" id="example1">
+	<%=  callout_header "Example 1", "#example1" %>
+<p>In <%= link_to "this example", "/examples/example1/Marchand,Victor-years.htm" %>, 
+the links for each year are nested inconsistently: sometimes they are 
+surrounded by 'b' tags, at other times by 'font' tags.  This inconsistency
+will confuse scrubyt's learning mode.  Here, an XPath is most appropriate.</p>
+<table>	
+	<tr>
+		<td>Example Text or XPath:</td>
+		<td>/html/body/div[10]/ul/li//a</td>
+	</tr>
+</table>
+</div>
+<div class="example" id="example2">
+	<%=  callout_header "Example 2", "#example2" %>
+<p>In <%= link_to "this simple example", "/examples/example2/menu-eng.html" %>, 
+links are all at the same level of the XML tree.  Example text can be used to
+train scrubyt.
+
+<table>	
+	<tr>
+		<td>Example Text or XPath:</td>
+		<td>View reports - Minister, Parliamentary Secretary, and exempt staff</td>
+	</tr>
+</table>
+</div>
+
+<%= render :partial => 'scrapeables/edit', 
+		   :locals => { :class_sym => :link_level, :model => @model } %>

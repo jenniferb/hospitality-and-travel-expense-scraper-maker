@@ -1,0 +1,20 @@
+/* CLF 2.0 TEMPLATE VERSION 1.02 | VERSION 1.02 DU GABARIT NSI 2.0 */
+/* TWO COLUMN LAYOUT CSS BEGINS | DEBUT DU CSS DE LA MISE EN PAGE DE DEUX COLONNES */
+div.left {
+	float: left; 
+	width: 150px;
+}
+div.center {
+	margin-left: 150px;
+	padding: 0px 0px 5px 10px;
+}
+* html div.center {
+	margin-left: auto;
+	padding-left: 10px;
+	padding-right: 20px;
+	margin-right: -10px;
+	float: left;
+	overflow: visible;
+}
+/* TWO COLUMN LAYOUT CSS ENDS | FIN DU CSS DE LA MISE EN PAGE DE DEUX COLONNES */
+

@@ -1,0 +1,36 @@
+<h1>Department: 
+<%= @department.name %></h1>
+
+<%= [:error, :notice].map {|e| content_tag(:div, flash[e], :id => "flash_#{e}") if flash[e] } %>
+<%= yield %>
+
+<p>Url: <%= @department.url %> <%= link_to 'Link', @department.url %></p>
+
+<% if @department.scrapeable? %>
+	<hr>
+	<h3>Link Levels</h3>
+	<ul>
+	<%= render :partial => 'scrapeable', :collection => @department.get_levels %>
+	</ul>
+	<hr>
+	<h3>Expense Details</h3>
+	<ul>
+		<%= render :partial => 'scrapeable', :collection => @department.travel_details %>
+		<%= render :partial => 'scrapeable', :collection => @department.hospitality_details %>
+	</ul>
+	<hr>
+	<% if @department.scrapers_completed? %>
+	<h3>Submit</h3>
+	<ol>
+		<li><%= link_to "Test Random Travel Report", @department.travel_details[0].path() + "/test" %></li>
+		<li><%= link_to "Test Random Hospitality Report", @department.hospitality_details[0].path() + "/test" %></li>
+		<li><%= link_to "Email Scrapers to VisibleGovernment", @department.path() + "/send_package", :method => :put %></li>
+	</ol>
+	<% end %>
+<% else %>
+	<p>Department not scrapeable.</p>
+	<ol>
+		<li><%= link_to "Email Department to VisibleGovernment", @department.path() + "/send_package", :method => :put %></li>
+	</ol>
+<% end %>
+

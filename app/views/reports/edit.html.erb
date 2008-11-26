@@ -1,0 +1,31 @@
+<h1>Report 
+<%= @report.report_name %>, 
+<%= @report.department.name %>
+</h1>
+<% error_messages_for :report %>
+
+<% form_for :report, :url => department_reports_url(:department_id => @report.department_id, :id => @report.id), :html => { :method => :put }  do |form| %>
+<p>Report Name: <br><%= form.text_field :report_name, :size => 60, :value => @report.report_name %></p>
+<p>Url: <br><%= form.text_field :url, :size => 60, :value => @report.url %></p>
+<hr>
+<p>Report Format:<%= select_tag :report_format, options_for_select([ 'Hospitality Expenses', "Travel Expenses", "Hospitality And Travel Expenses" ], "Hospitality And Travel Expenses") %>
+</p>
+<p>Name Format:<%= select_tag :report_format, options_for_select([ 'Last, First, Position', "First Last, Position" ], "Last, First, Position") %></p>
+<hr>
+<p>Name of Person: <br><%= form.text_field :person_name, :size => 60, :value => @report.person_name %></p>
+<p>Position of Person: <br><%= form.text_field :person_position, :size => 60 , :value => @report.person_position %></p>
+<hr>
+<p>First Travel Expense Start Date: <br><%= form.text_field :first_t_expense_start, :size => 60, :value => @report.first_expense_start %></p>
+<p>First Travel Expense End Date: <br><%= form.text_field :first_t_expense_end, :size => 60, :value => @report.first_expense_end %></p>
+<p>First Travel Expense Description: <br><%= form.text_field :first_t_expense_desc, :size => 60,  :value => @report.first_expense_desc %></p>
+<p>First Travel Expense Cost: <br><%= form.text_field :first_t_expense_cost, :size => 60 , :value => @report.first_expense_cost %></p>
+<hr>
+<p>First Hospitality Expense Start Date: <br><%= form.text_field :first_h_expense_start, :size => 60, :value => @report.first_expense_start %></p>
+<p>First Hospitality Expense End Date: <br><%= form.text_field :first_h_expense_end, :size => 60, :value => @report.first_expense_end %></p>
+<p>First Hospitality Expense Description: <br><%= form.text_field :first_h_expense_desc, :size => 60,  :value => @report.first_expense_desc %></p>
+<p>First Hospitality Expense Cost: <br><%= form.text_field :first_h_expense_cost, :size => 60 , :value => @report.first_expense_cost %></p>
+
+<hr>
+<%= submit_tag "Edit Report"  %> 
+<% end %>
+

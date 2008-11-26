@@ -1,0 +1,2 @@
+module ReportSummariesHelper
+end

@@ -1,0 +1,40 @@
+<%= render :partial => 'header', 
+		   :locals => { :model => @model } %>
+
+<%= render :partial => 'scrapeables/edit_header', 
+		   :locals => { :model => @model } %>
+		   
+<div class="instructions">
+	<%=  callout_header "Instructions", ".instructions" %>
+	<ol>
+		<li>Open the Page Cache link in another tab</li>
+		<li>Find the element above where the two types of links diverge
+			<ul>
+				<li>Normally, the two types of links are in different tables.</li>
+			</ul>
+		</li>
+		<li>If links are not in tables, edit the base XPath and offsets as appropriate.</li>
+	</ol>
+</div>
+<div class="example" id="example1">
+	<%=  callout_header "Example", "#example1" %>
+	<p>In <%= link_to "this example", "/examples/example1/Marchand,Victor-2008.htm" %>, 
+	the following XPaths are used</p>
+<table>	
+	<tr>
+		<td>Base XPath</td>
+		<td>/html/body</td>
+	</tr>
+	<tr>
+		<td>Travel Links Offset</td>
+		<td>/div[15]/table[1]/tr/td[2]</td>
+	</tr>
+	<tr>
+		<td>Hospitality Links Offset</td>
+		<td>/div[10]/table/tr/td[2]</td>
+	</tr>
+</table>
+</div>
+
+<%= render :partial => 'scrapeables/edit', 
+		   :locals => { :class_sym => :split_level, :model => @model } %>

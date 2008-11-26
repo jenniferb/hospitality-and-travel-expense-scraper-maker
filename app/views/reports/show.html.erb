@@ -1,0 +1,16 @@
+<h1>Report 
+<%= @report.report_name %> 
+<%= @report.department.name %></h1>
+
+
+<p>Name of Person:<%= @report.person_name %></p>
+<p>Position of Person: <%= @report.person_position %></p>
+<p>First Expense Start Date: <%= @report.first_expense_start %></p>
+<p>First Expense End Date: <%= @report.first_expense_end %></p>
+<p>First Expense Description: <%= @report.first_expense_desc %></p>
+<p>First Expense Cost: <br><%= @report.first_expense_cost %></p>
+
+<%= link_to "edit" , edit_department_report_url(:department_id => @report.department_id,
+														:id => @report.id) %>
+<%= link_to  "create template" , department_report_verify_template_url(:department_id => @report.department_id,
+														:report_id => @report.id ) %>

@@ -1,0 +1,261 @@
+/* CLF 2.0 TEMPLATE VERSION 1.02 | VERSION 1.02 DU GABARIT NSI 2.0 */
+/* GENERAL CSS BEGINS | DEBUT DU CSS GENERAL */
+body {
+	background-color: #578;
+}
+div.colLayout {
+	background-color: #FFF;
+	height: 100%;
+}
+/* GENERAL CSS ENDS | FIN DU CSS GENERAL */
+
+/* FIP HEADER CSS BEGINS | DEBUT DU CSS DE L'EN-TETE PCIM */
+div.fip, div.cwm {
+	height: 20px;
+}
+div.cwm img {
+	padding-top: 0px;
+}
+/* FIP HEADER CSS ENDS | FIN DU CSS DE L'EN-TETE PCIM */
+
+/* INSTITUTIONAL BANNER CSS BEGINS | DEBUT DU CSS DE LA BANNIERE INSTITUTIONNELLE */
+div.banner {
+	color: #FFF;
+	background-color: #578;
+	background: url(/images/clf2/hdr.jpg) #FFF no-repeat center center;
+}
+div.banner-eng, div.banner-lfcoa-eng {
+	background: url(/images/clf2/hdr.jpg) #FFF no-repeat center center;
+}
+div.banner-fra, div.banner-lfcoa-fra {
+	background: url(/images/clf2/hdr.jpg) #FFF no-repeat center center;
+}
+/* INSTITUTIONAL BANNER CSS ENDS | FIN DU CSS DE LA BANNIERE INSTITUTIONNELLE */
+
+/* SKIP NAVIGATION CSS BEGINS | DEBUT DU CSS DU SAUT DE NAVIGATION */
+div.page div.core div.navaid {
+	width: 450px;
+	padding-left: 50px;
+}
+* html div.page div.core div.navaid {
+	width: 450px;
+	padding-left: 50px;
+}
+*:first-child+html div.page div.core div.navaid {
+	width: 450px;
+	padding-left: 50px;
+}
+div.page div.core div.navaid a:hover,
+div.page div.core div.navaid a:active,
+div.page div.core div.navaid a:focus {
+	color: #000;
+	background-color: #CC9;
+	border-color: #000;
+}
+/* SKIP NAVIGATION CSS ENDS | FIN DU CSS DU SAUT DE NAVIGATION */
+
+/* SIDE MENU CSS BEGINS | DEBUT DU CSS DU MENU LATERAL */
+/* LEFT SIDE MENU CSS BEGINS | DEBUT DU CSS DU MENU GAUCHE */
+
+
+div.left .menucontent {
+	border-bottom: 1px solid #999;
+}
+
+div.left .menulink {
+	color:  #036;
+	background-color: #eee;
+}
+
+
+div.left ul.nav2 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+div.left ul.nav li, ul.nav2 li {
+	margin: 0;
+	padding:0;
+}
+
+
+div.left ul.nav .menulink {
+	padding: 2px 3px 2px 5px;
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+
+div.left ul.nav .menulink:hover {
+	padding: 2px 3px 2px 5px;
+	display:block;
+	background-color:#cca;
+	color: #000;
+	text-decoration: none;
+}
+
+div.left .nav2 li {
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+	padding:0;
+	margin:0;
+}
+
+div.left ul.nav li strong  {
+	padding: 2px 3px 2px 5px;
+	display: block;
+	background-color: #eee;
+	color: #000;
+	text-decoration: none;
+	margin: 0;
+	font-weight: bold;
+}
+div.left ul.nav2 .menulink {
+	padding: 2px 3px 2px 20px;
+	display:block;
+	color: #333;
+	text-decoration: none;
+	margin:0;
+}
+
+div.left ul.nav2 li ul.nav2 .menulink {
+	padding: 2px 3px 2px 30px;
+	display:block;
+	color: #333;
+	text-decoration: none;
+	margin:0;
+}
+
+div.left ul.nav2 .menulink:hover  {
+	padding: 2px 3px 2px 20px;
+	display:block;
+	background-color:#cca;
+	color: #000;
+	text-decoration: none;
+	margin:0;	
+}
+
+div.left ul.nav2 li strong  {
+	padding: 2px 3px 2px 20px;
+	display:block;
+	background-color:#eee;
+	color: #000;
+	text-decoration: none;
+	margin:0;	
+	font-weight:bold;	
+}
+
+div.left ul.nav2 li ul.nav2 .menulink:hover  {
+	padding: 2px 3px 2px 30px;
+	display:block;
+	background-color:#cca;
+	color: #000;
+	text-decoration: none;
+	margin:0;	
+}
+
+div.left ul.nav2 li ul.nav2 li strong  {
+	padding: 2px 3px 2px 30px;
+	display:block;
+	background-color:#eee;
+	color: #000;
+	text-decoration: none;
+	margin:0;	
+	font-weight:bold;	
+}
+
+div.left .menucontent {
+	display:block;
+	border-bottom: 1px solid #999;
+	background-color: #eee;
+	padding: 0;
+	margin:0;
+}
+
+div.left .menucontent h3 {
+	padding: 2px 3px 2px 7px;
+	font-weight: normal;
+	font-size: 100%;
+	margin:0;
+}
+
+
+div.left h2.nav,div.left h2.nav a:link,div.left h2.nav a:visited,div.left h2.nav .menulink:hover{
+	background-color: #578;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0;
+}
+
+div.left h2.nav a:hover {
+	text-decoration: none;
+}
+
+div.left h2.nav{
+	border-top: 1px solid #FFF;
+	padding: 2px 3px 2px 7px;
+	line-height: normal;
+}
+
+div.prodis {
+	background-color: #696;
+}
+/* Left SIDE MENU CSS ENDS | FIN DU CSS DU MENU GAUCHE */
+
+/* RIGHT SIDE MENU CSS BEGINS | DEBUT DU CSS DU MENU GAUCHE */
+
+div.right li ul.nav {
+	border: 1px solid #000;
+}
+
+div.right li.menucontent, div.right div.menucontent {
+	color: #000;
+	background-color: #FFF;
+}
+div.right a.menulink {
+	color: #000;
+	background-color: #FFF;
+}
+
+/* RIGHT SIDE MENU CSS ENDS | FIN DU CSS DU MENU GAUCHE */
+/* SIDE MENU CSS ENDS | FIN DU CSS DU MENU LATERAL */
+
+/* CONTENT CSS BEGINS | DEBUT DU CSS DU CONTENU */
+
+div.center h1, h2, h3, h4, h5, h6 {
+	color: #000;
+}
+div.center a:link {
+	color: #039;
+}
+div.center a:visited {
+	color: #663;
+}
+div.blackborder {
+	border: solid #000 1px;
+}
+div.blackborder:after {
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: left;
+	visibility: hidden;
+}
+
+* html div.center h1 {
+width:95%;
+}
+
+	
+/* CONTENT CSS ENDS | FIN DU CSS DU CONTENU */
+
+/* FOOTER CSS BEGINS | DEBUT DU CSS DU PIED DE LA PAGE */
+div.footer div.footerline {
+	background-color: #578;
+}
+div.footer a:link, div.footer a:visited, div.center div.footer a:link, div.center div.footer a:visited, div.center div.topPage a:link, div.center div.topPage a:visited, div.center p.topPage a:link, div.center p.topPage a:visited {
+	color: #039;
+	background-color: #FFF;
+}
+/* FOOTER CSS ENDS | FIN DU CSS DU PIED DE LA PAGE */

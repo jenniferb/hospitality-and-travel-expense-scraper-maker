@@ -1,0 +1,11 @@
+<h2>Report <%= @report.report_name %> 
+, <%= @report.department.name  %></h2>
+
+<%= render :partial => 'reportxml', 
+		   :locals => { :reportxml => @xml } %>
+
+
+<%= link_to "Edit" , edit_department_report_url(:department_id => @report.department_id,
+														:id => @report.id) %>
+<%= link_to "OK" , department_report_verify_scraper_url(:department_id => @report.department_id,
+														:report_id => @report.id ) %>

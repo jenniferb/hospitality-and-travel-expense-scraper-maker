@@ -1,0 +1,10 @@
+<%= render :partial => type + '/header',  :locals => { :model => model } %>
+
+Test on a <%= link_to "Random Link", test_link %>
+<hr>
+<%= render :partial => type + '/xml',  :locals => { :xml => xml } %>
+<hr>
+<div class="instructions">
+<%= link_to  "Another" , model.path() + "/test", :method => :put  %>
+<%= link_to  "Done" , model.department.path()  %>
+	

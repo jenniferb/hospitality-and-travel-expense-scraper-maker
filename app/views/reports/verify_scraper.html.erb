@@ -1,0 +1,8 @@
+<h2>Report <%= @report.report_name %> 
+, <%= @report.department.name  %></h2>
+
+<%= render :partial => 'reportxml', 
+		   :locals => { :reportxml => @xml } %>
+
+<%= link_to "OK" , department_report_confirm_url(:department_id => @report.department_id,
+														:report_id => @report.id ) %>

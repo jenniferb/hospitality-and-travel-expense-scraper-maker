@@ -1,0 +1,11 @@
+<p>URL:<%= @model.url %> <%= link_to 'Page Cache', @model.page_cache%></p>
+<hr>
+<table>
+<% for trait in @model.get_traits %>
+<tr>
+	<td><%= trait.label %></td>
+	<td><%= @model[trait.trait_name] %></td>
+</tr>
+<% end %>
+</table>
+<hr>

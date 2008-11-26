@@ -1,0 +1,20 @@
+<h3>Travel Links</h3>
+
+<table>
+<tr>
+		<td>Title</td>
+		<td>URL</td>
+</tr>
+	<%= render :partial => 'linkxml', :collection => xml.elements.to_a('//travel_expenses//expense')  %>
+</table>
+
+<h3>Hospitality Links</h3>
+
+<table>
+<tr>
+		<td>Title</td>
+		<td>URL</td>
+</tr>
+	<%= render :partial => 'linkxml', :collection => xml.elements.to_a('//hospitality_expenses//expense')  %>
+</table>
+
