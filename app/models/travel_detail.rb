@@ -34,6 +34,7 @@ class TravelDetail < Scrapeable
     add_trait( :meals, "Meals Row #")
     add_trait( :other, "Other Row #")
     add_trait( :total, "Total Row #"  )
+    add_trait( :data_column, "Data Column #"  )
   end
   
   def test

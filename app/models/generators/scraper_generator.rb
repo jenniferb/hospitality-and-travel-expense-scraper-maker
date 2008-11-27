@@ -24,7 +24,12 @@ class ScraperGenerator
   # position following one of three common formats.  
   
   def person_name_and_position( file, args )
-    file.puts "           person_name_and_position \"" + args['person_name_and_position_xpath'] + "\" do "
+    name_xpath = args['person_name_and_position_xpath']
+    if( args['name_inside_table'] == true )
+      name_xpath += "/td[#{args['data_column']}]"
+    end
+    
+    file.puts "           person_name_and_position \"" + name_xpath + "\" do "
     if( args['person_name_format'] == "Last, First, Position")
       file.puts "              last_name  /^\\s*([^,]+)\\s*,/"
       file.puts "              first_name /^\\s*[^,]+\\s*,([^,]+)\\s*,/"
@@ -48,14 +53,14 @@ class ScraperGenerator
   
   def dates( file, args )
     if( args['date_format'] == "One Cell")
-      file.puts "              dates '/tr[" + args['start_date'] + "]/td[2]' do"
+      file.puts "              dates '/tr[" + args['start_date'] + "]/td[#{args["data_column"]}]' do"
       file.puts "                 start_date /^\\s*(\\S+)\\s*/"    
       file.puts "                 end_date /\\s*(\\S+)\\s*$/"    
       file.puts "              end"   
     else
       file.puts "              dates '/.*/' do"
-      file.puts "                  start_date 'tr[" + args['start_date'] + "]/td[2]' do"
-      file.puts "                  end_date 'tr[" + args['end_date'] + "]/td[2]' do"
+      file.puts "                  start_date 'tr[" + args['start_date'] + "]/td[#{args["data_column"]}]' do"
+      file.puts "                  end_date 'tr[" + args['end_date'] + "]/td[#{args["data_column"]}]' do"
       file.puts "              end"   
     end
   end
@@ -122,6 +127,9 @@ class ScraperGenerator
     file = File.open(scraper_filename,'w')
     file.puts "require 'rubygems'" 
     file.puts "require 'scrubyt'"
+    file.puts 'require \'builder\''
+    file.puts 'require \'rexml/document\''
+
     file.puts ""
     file.puts "class " + scraper_classname 
     file.puts "    def scrape( url )"    
@@ -130,6 +138,12 @@ class ScraperGenerator
     file.puts "    return( xml )"
     file.puts "  end"
     file.puts ""
+    file.puts 'private'
+    file.puts ""
+    
+    file.puts '    # The method below is an alternate way of scraping the same '
+    file.puts '    # information, using hpricot directly.'
+
     write_hpricot_scraper(file, args)
     file.puts "end"
     file.close  
@@ -171,9 +185,15 @@ class ScraperGenerator
     for i in (5..(arr.size - 2))
       file.puts arr[i]     
     end
-    file.puts "xml = template.to_xml"
-    file.puts "return (xml) "
+    file.puts "    xml = template.to_xml"
+    file.puts "    return (xml) "
     file.puts 'end'
+    file.puts ''
+    file.puts 'private'
+    file.puts ''    
+    file.puts '  # The method below is an alternate way of scraping the same '
+    file.puts '  # information, using hpricot directly.'
+    
     
     write_hpricot_scraper(file, args)
     
@@ -246,11 +266,14 @@ class ScraperGenerator
       link = element.text
       
       if( link =~ /^\// )
+        puts "link starts with /" + link
         element.text = "http://" + uri.host + link 
       else
         if( http_path =~ /\/$/ )
+          puts "path ends with /" + http_path + " link " + link
           element.text = http_path + link
         else
+          puts "adding / to " + http_path + " link " + link
           element.text = http_path + '/' + link        
         end
       end

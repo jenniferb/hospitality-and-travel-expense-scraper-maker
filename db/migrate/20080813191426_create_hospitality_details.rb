@@ -8,7 +8,7 @@ class CreateHospitalityDetails < ActiveRecord::Migration
       t.column :person_name_format, :string
       t.column :date_format, :string
       t.column :report_xpath, :string      
-      t.column :person_name_and_position_xpath, :string
+      t.column :person_name_and_position_xpath, :string, :default => "/tr[1]"
       t.column :start_date, :string, :default => "3"
       t.column :end_date, :string
       t.column :purpose, :string, :default => "2"
@@ -16,6 +16,7 @@ class CreateHospitalityDetails < ActiveRecord::Migration
       t.column :attendees, :string, :default => "5"
       t.column :total, :string, :default => "6"
       t.column :name_inside_table, :boolean, :default => true
+      t.column :data_column, :string, :default => "2"
 
       t.timestamps
     end

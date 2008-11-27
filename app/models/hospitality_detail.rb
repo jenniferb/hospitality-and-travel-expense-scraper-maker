@@ -30,6 +30,7 @@ class HospitalityDetail < Scrapeable
     add_trait( :location , "Location Row")
     add_trait( :attendees , "Attendees Row")
     add_trait( :total, "Total Row"  )
+    add_trait( :data_column, "Data Column #"  )
   end
   
   def get_test_link

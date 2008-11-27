@@ -22,7 +22,7 @@ class LinkLevelScraperGenerator < ScraperGenerator
     file.puts "   def scrape_w_hpricot( url )"
     file.puts "     doc = Hpricot(open(url))"
     file.puts "     builder = Builder::XmlMarkup.new( :indent => 2 )"
-    file.puts "     links = doc.search('#{args['example_text']}')"
+    file.puts "     links = doc.search('** XPATH TO LINK**')"
     file.puts "     xml = builder.levels do"
     file.puts "       links.each { |link|"
     file.puts "         builder.level { |b| "

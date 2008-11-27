@@ -42,11 +42,11 @@ class ScrapeableController < ApplicationController
    def update
     @model = get_model
     
-    @model.get_traits.each { | trait |
-       if params[@symbol_name][trait.trait_name.to_s] and params[@symbol_name][trait.trait_name.to_s] =~ /tbody/
-        params[@symbol_name][trait.trait_name.to_s] = params[@symbol_name][trait.trait_name.to_s].gsub(/\/tbody/,"")
-       end
-    }
+    #@model.get_traits.each { | trait |
+    #   if params[@symbol_name][trait.trait_name.to_s] and params[@symbol_name][trait.trait_name.to_s] =~ /tbody/
+    #    params[@symbol_name][trait.trait_name.to_s] = params[@symbol_name][trait.trait_name.to_s].gsub(/\/tbody/,"")
+    #   end
+    #}
 
     @model.attributes = params[@symbol_name]
  

@@ -30,17 +30,17 @@ ActiveRecord::Schema.define(:version => 20080819225932) do
     t.string   "person_name_format"
     t.string   "date_format"
     t.string   "report_xpath"
-    t.string   "person_name_and_position_xpath"
+    t.string   "person_name_and_position_xpath", :default => "/tr[1]"
     t.string   "start_date",                     :default => "3"
     t.string   "end_date"
     t.string   "purpose",                        :default => "2"
     t.string   "location",                       :default => "4"
     t.string   "attendees",                      :default => "5"
     t.string   "total",                          :default => "6"
+    t.boolean  "name_inside_table",              :default => true
+    t.string   "data_column",                    :default => "2"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "name_inside_table",              :default => true
-
   end
 
   create_table "link_levels", :force => true do |t|
@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(:version => 20080819225932) do
     t.string   "person_name_format"
     t.string   "date_format"
     t.string   "report_xpath"
-    t.string   "person_name_and_position_xpath", :default => "/tr[1]/td[2]"
+    t.string   "person_name_and_position_xpath", :default => "/tr[1]"
     t.string   "expense_table_xpath"
     t.string   "start_date",                     :default => "3"
     t.string   "end_date"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20080819225932) do
     t.string   "other",                          :default => "9"
     t.string   "total",                          :default => "10"
     t.boolean  "name_inside_table",              :default => true
+    t.string   "data_column",                    :default => "2"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
