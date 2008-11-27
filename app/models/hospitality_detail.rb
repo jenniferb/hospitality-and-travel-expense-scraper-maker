@@ -26,9 +26,9 @@ class HospitalityDetail < Scrapeable
     add_trait( :date_format ,"Date Format","select",["One Cell", "Two Cells"])
     add_trait( :purpose ,  "Purpose Row")
     add_trait( :start_date ,"Start Date Row (eg 1,2...)")
-    add_trait( :end_date, "End Date Row (if two dates)")
-    add_trait( :location , "Location Row")
+    add_trait( :end_date, "End Date Row (if two rows)")
     add_trait( :attendees , "Attendees Row")
+    add_trait( :location , "Location Row")
     add_trait( :total, "Total Row"  )
     add_trait( :data_column, "Data Column #"  )
   end

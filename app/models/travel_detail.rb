@@ -26,7 +26,7 @@ class TravelDetail < Scrapeable
     add_trait( :date_format ,"Date Format","select",["One Cell", "Two Cells"])
     add_trait( :purpose ,  "Purpose Row #")
     add_trait( :start_date ,"Start Date Row #")
-    add_trait( :end_date, "End Date Row (if two dates)")
+    add_trait( :end_date, "End Date Row (if two rows)")
     add_trait( :destinations , "Destination Row #")
     add_trait( :airfare , "Airfare Row #")
     add_trait( :other_travel , "Other Travel Row #")

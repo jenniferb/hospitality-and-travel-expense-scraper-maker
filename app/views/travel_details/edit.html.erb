@@ -8,10 +8,10 @@
 	<%=  callout_header "Instructions", ".instructions" %>
 	<ol>
 		<li>Open the Page Cache link in another tab</li>
-		<li>Use firebug to find the 'Base XPath' -- the element above the expense report table</li>
+		<li>Use firebug to find the 'Base XPath' -- the element that is the parent of the expense report table</li>
 		<li>Is the person's name and position inside the table?  If so, click yes</li>
 		<li>If the person's name is inside the table, it is usually in the first
-		row (/tr[1]).  If it is somewhere else, put the offset from the base XPath here.
+		row (/tr[1]).  If it the name is outside the table, put the offset from the base XPath here.
 		<li>Select the format of the person's name and position -- usually one of three choices</li>
 		<li>Is the date in one cell or two?  Usually it is in one.</li>
 		<li>The next few fields indicate the table rows containing report values</li>

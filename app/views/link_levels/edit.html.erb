@@ -8,15 +8,16 @@
 <div class="instructions">
 	<%=  callout_header "Instructions", ".instructions" %>
 	<ol>
-		<li>Open the Page Cache link in another tab
-			<ul><li>This is a link to a locally cached file. Hint: In Firefox,
+		<li>Open the Local Page Cache link in another tab
+			<ul><li>Hint: In Firefox,
 			you must copy the link location (right click) and paste it into the other tab</li></ul>
 		</li>
-		<li>Cut and paste either:
+		<li>Find the links that lead to the next level.  Cut and paste either:
 			<ul>
 				<li>example link text</li>
 				<li>an XPath for the link copied from Firebug</li>
 			</ul>
+			to the 'Example Text or XPath' field.
 		</li>
 	</ol>
 </div>
@@ -35,7 +36,7 @@ will confuse scrubyt's learning mode.  Here, an XPath is most appropriate.</p>
 </div>
 <div class="example" id="example2">
 	<%=  callout_header "Example 2", "#example2" %>
-<p>In <%= link_to "this simple example", "/examples/example2/menu-eng.html" %>, 
+<p>In <%= link_to "this example", "/examples/example2/menu-eng.html" %>, 
 links are all at the same level of the XML tree.  Example text can be used to
 train scrubyt.
 
