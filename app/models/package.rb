@@ -26,6 +26,10 @@ private
    def write_dept_file()
      f = File.open(department_filename, 'w') 
      f.puts @department.to_yaml
+     
+     f.puts ""
+     f.puts @department.get_scrapeables.to_yaml
+     f.puts ""
      f.close
   end
  
