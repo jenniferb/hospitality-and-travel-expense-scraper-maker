@@ -1,4 +1,5 @@
 require 'hpricot'
+require 'iconv'
 
 
 # Represents an HTML page in the database.  Links 

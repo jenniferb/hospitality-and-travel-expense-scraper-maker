@@ -25,6 +25,15 @@ class LinkLevel < Scrapeable
       return( self.department.get_level( one_down ) )    
    end
    
+  def uses_template?
+    if( @attributes['example_text'] and @attributes['example_text'] =~ /^\// )
+      puts "doesn't use template"
+      return( false )
+    end
+    puts "uses template.  char 0" 
+    return( true )
+  end
+
    def get_random_link( url )
       links = get_links(url)
       return( links.sort_by{rand}.last )

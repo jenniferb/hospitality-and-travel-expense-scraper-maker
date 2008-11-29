@@ -58,8 +58,8 @@ class ScraperGenerator
       file.puts "                 end_date /\\s*(\\S+)\\s*$/"    
       file.puts "              end"   
     else
-      file.puts "                  start_date 'tr[" + args['start_date'] + "]/td[#{args["data_column"]}]' "
-      file.puts "                  end_date 'tr[" + args['end_date'] + "]/td[#{args["data_column"]}]' "
+      file.puts "                  start_date '/tr[" + args['start_date'] + "]/td[#{args["data_column"]}]' "
+      file.puts "                  end_date '/tr[" + args['end_date'] + "]/td[#{args["data_column"]}]' "
     end
   end
   

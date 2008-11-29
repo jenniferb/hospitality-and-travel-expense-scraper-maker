@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20080819225932) do
     t.string   "start_date",                     :default => "3"
     t.string   "end_date"
     t.string   "purpose",                        :default => "2"
-    t.string   "location",                       :default => "4"
-    t.string   "attendees",                      :default => "5"
+    t.string   "location",                       :default => "5"
+    t.string   "attendees",                      :default => "4"
     t.string   "total",                          :default => "6"
     t.boolean  "name_inside_table",              :default => true
     t.string   "data_column",                    :default => "2"
