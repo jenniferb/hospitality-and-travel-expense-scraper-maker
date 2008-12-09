@@ -17,7 +17,7 @@ class ScraperGenerator
   
   def initialize( department, name )
     @department = department
-    @name = (department.name + name).gsub(/\s*/,"").gsub(/^-|-$|'/, '').gsub(/-/,'')   
+    @name = (department.name + name).gsub(/\s*/,"").gsub(/^-|-$|'/, '').gsub(/-/,'').gsub(/,/,'') 
   end
   
   # write the scrubyt extractor for a report subject's name and 
@@ -256,8 +256,9 @@ class ScraperGenerator
     return(str)
   end
   
-  
   def fix_links( rooturl, xml )   
+    rooturl.gsub!(/ /, '%20')
+
     uri = URI.parse( rooturl )
     http_path = "http://" + uri.host + Pathname(uri.path).dirname 
     xml.elements.each("//url")  { |element| 
@@ -275,7 +276,6 @@ class ScraperGenerator
           element.text = http_path + '/' + link        
         end
       end
-       
     }     
   end
   
